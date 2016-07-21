@@ -1,0 +1,26 @@
+<h2 id="title">Welcome to Ember</h2>
+
+<table>
+  <thead>
+    <th>id</th>
+    <th>d</th>
+    <th>ds</th>
+    <th>s</th>
+  </thead>
+  <tbody>
+{{#each model as |m|}}
+<tr>
+  <td>{{m.id}}</td>
+  <td>{{m.d}}</td>
+  <td>{{m.ds}}</td>
+  <td>{{m.s}}</td>
+</tr>
+{{/each}}
+</tbody>
+</table>
+
+<button {{action 'create'}}>Create</button>
+<button {{action 'push'}}>Push</button>
+<button {{action 'get'}}>Get</button>
+
+{{outlet}}
